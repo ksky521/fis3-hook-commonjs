@@ -6,9 +6,9 @@ module.exports = function(file, opts) {
 
   var content = file.getContent();
   var forceNoWrap = file.wrap === false;
-  
+
   if (!forceNoWrap && file.isMod) {
-    
+
     var deps = '';
     if (opts.forwardDeclaration) {
       var reqs = opts.skipBuiltinModules ? [] : ['\'require\'', '\'exports\'', '\'module\''];
@@ -34,7 +34,7 @@ module.exports = function(file, opts) {
     }
 
     var prefix = 'define(\'' + (file.moduleId || file.id) + '\',' + deps + ' function(require, exports, module) {\n\n';
-    var affix = '\n\n});\n';
+    var affix = opts.withHash ? ('\n\n}, \'' + file.getHash() + '\');\n') : ('\n\n});\n');
 
     content = prefix + content + affix;
 
@@ -50,7 +50,7 @@ module.exports = function(file, opts) {
 
     if (derived && derived[0] && derived[0].rExt === '.map') {
       var SourceMap = require('source-map');
-      
+
 
       var sourcemap = derived[0];
       var json = JSON.parse(sourcemap.getContent());

@@ -1,6 +1,6 @@
 {
-  "name": "fis3-hook-commonjs",
-  "version": "0.1.14",
+  "name": "fis3-hook-commonjsx",
+  "version": "0.1.0",
   "description": "fis3 commonJs module",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fex-team/fis3-hook-commonjs.git"
+    "url": "https://github.com/ksky521/fis3-hook-commonjsx.git"
   },
   "keywords": [
     "fis3",
@@ -18,9 +18,9 @@
   "author": "fis",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/fex-team/fis3-hook-commonjs/issues"
+    "url": "https://github.com/ksky521/fis3-hook-commonjsx/issues"
   },
-  "homepage": "https://github.com/fex-team/fis3-hook-commonjs",
+  "homepage": "https://github.com/ksky521/fis3-hook-commonjsx",
   "devDependencies": {
     "chai": "^3.2.0",
     "fis3": "^3.1.3",

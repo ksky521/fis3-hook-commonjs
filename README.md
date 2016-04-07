@@ -1,3 +1,8 @@
+# fis3-hook-commonjsx
+针对commonjs做了些修改，支持hash，用于localstorage缓存
+
+下面是原readme
+
 # fis3-hook-commonjs
 
 fis3 已经默认不自带模块化开发支持，那么如果需要采用 commonjs 规范作为模块化开发，请使用此插件。
